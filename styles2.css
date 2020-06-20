@@ -1,0 +1,16 @@
+.card {
+  border-radius: 0.625rem;
+  position: relative;
+  cursor: pointer;
+    background: #000;
+  width: 17rem;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card h2 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,993 @@
+* {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+}
+.container .box {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box img {
+  max-width: 60%;
+  height: auto;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+/* HOME */
+.banner1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("deer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.banner1 .content {
+  position: relative;
+  padding: 0 5%;
+  /* max-width: 900px; */
+  text-align: center;
+}
+.banner1 .content h2 {
+  color: #000;
+  font-size: 200%;
+  font-weight: 600;
+}
+.banner1 .content p {
+  font-weight: 600;
+  color: #000;
+  margin: 15px;
+  font-size: 156.3%;
+  text-align: right;
+}
+.banner1 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+.banner1 header .menu {
+  display: none;
+}
+ul li img {
+    height: 10rem;
+    width: 13rem;
+}
+.logo:hover {
+  color: #f0a500;;
+  transition: 2s;
+}
+ul li {
+  list-style-type: none;
+}
+.nItems {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 14px;
+}
+ul li a {
+  position: relative;
+  padding: 0.625rem;
+  display: block;
+  color: #000;
+  /* -webkit-text-stroke: 1px #fff; */
+  font-size: 1.063rem;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.2;
+}
+ul li a:hover {
+  color: #e4f1fe;
+  /* -webkit-text-stroke: 1px #000; */
+  transition: 0.5s;
+  text-decoration: none;
+}
+ul li a:before,
+ul li a:after
+{
+  content: attr(data-text);
+  position: absolute;
+  padding: 0.625rem;
+  top: 0;
+  left: 0;
+  transition-duration: 0.5s;
+}
+ul li a:hover:before{
+  color: #22313f;
+  z-index: 1;
+  /* -webkit-text-stroke: 1px #000; */
+  transform: translate(0.188rem,-0.188rem);
+}
+ul li a:hover:after{
+  color: #ff5335;
+  z-index: 2;
+  /* -webkit-text-stroke: 1px #000; */
+  transform: translate(0.375rem,-0.375rem);
+}
+/* ABOUT */
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.about .contentBx {
+  background: #000;
+  box-sizing: border-box;
+  padding: 3.125rem;
+  width: 50%;
+  height: 100vh;
+}
+.about .imgBx {
+  width: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.model {
+    width: 100%;
+    height: auto;
+}
+.heading {
+  color: #fff;
+  text-align: center;
+  margin-top: 0.625rem;
+  font-size: 2.188rem;
+  font-weight: 600;
+  letter-spacing: 0.063rem;
+  margin-bottom: 0.625rem;
+}
+.text {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.about .text {
+  color: #fff;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+/* SERVICES */
+.services .heading {
+  color: #000;
+  margin-top: 0.625rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.063rem;
+  margin-bottom: 0.625rem;
+}
+.services .text {
+  color: #000;
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.services {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #fff;
+  padding: 3.125rem;
+  text-align: center;
+  background-image: url("deer2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.services .container2 {
+  width: 100%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+.services .container2 .servicesbx {
+  border-radius: 0.625rem;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+    background: #000;
+  width: 17rem;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container2 .servicesbx h2 {
+  color: #fff;
+  margin-top: 0;
+}
+.services .container2 .box1:hover {
+  cursor: auto;
+  background: #E55D87;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5FC3E4, #E55D87);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.services .container2 .box2:hover {
+    cursor: auto;
+  background: #003973;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.services .container2 .box3:hover {
+    cursor: auto;
+  background: #ff6e7f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.services .container2 .box4:hover {
+    cursor: auto;
+  background: #cc2b5e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.services .container2 .servicesbx button {
+  width: 6.25rem;
+  height: 1.875rem;
+  color: #000;
+  border-radius: 0.938rem;
+  font-size: 0.813rem;
+  font-weight: 700;
+  box-shadow: none;
+  border: 0;
+  margin-top: 3.75rem;
+  cursor: pointer;
+}
+.services .colpics {
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+.services .container2 .servicesbx button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.services img {
+  width: 6.25rem;
+  margin-bottom: 1.25rem;
+}
+.services .container2 .servicesbx h2 {
+  max-width: 15rem;
+}
+.services h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+/* TECHNOLOGY */
+.technology {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #fff;
+  padding: 3.125rem;
+}
+.technology .b2 {
+  margin: 20vh 40%;
+}
+.technology .b3 {
+  margin: 20vh 40%;
+}
+.technology .contentBx {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1.25rem;
+  margin-top: 10px;
+}
+.technology .heading {
+  color: #000;
+  margin-top: 0.625rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.technology .text {
+  color: #000;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.technology .brands {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+}
+.technology img {
+    width: 40%;
+    margin: 40px 30%;
+    height: auto;
+    /* padding: 20px; */
+}
+.technology .brands img:hover {
+  opacity: 1;
+}
+
+/* CLINT WORDS */
+.client {
+  height: 70vh;
+  background: #fff;
+}
+.clients .carlod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.box {
+  margin: 1rem;
+}
+.quote {
+    font-size: 30px;
+}
+.client .carousel-item img {
+    width: 8%;
+    margin: 3% 2% 2% 0;
+    border-radius: 50%;
+    height: auto;
+}
+.client .carousel-item h2, p, h4 {
+  color: #000;
+}
+.rex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto 15%;
+    height: 50vh;
+}
+.client .heading {
+  color: #000;
+  margin-top: 0.625rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.063rem;
+  margin-bottom: 0.625rem;
+}
+.client .text {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.client .carslid {
+  height: 80%;
+  overflow-y: hidden;
+}
+html {
+  font-size: 100%;
+}
+.client .heading {
+  color: #000;
+  text-align: center;
+  margin-top: 1.875rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.063rem;
+  margin-bottom: 3%;
+}
+.contact .imgBx {
+  width: 50%;
+  /* background-color: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contact {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-image: url("deer3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contact .contentBx {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  padding: 5%;
+  width: 50%;
+  height: 100vh;
+}
+/* contact */
+.banner {
+  width: 100%;
+  height: 50vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner video {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.HEAD {
+  text-align: center;
+}
+.banner a {
+  width: 100%;
+}
+.banner i.fa {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    font-size: 15vh;
+    text-align: center;
+    color: #000;
+    line-height: 52vh;
+    mix-blend-mode: screen;
+}
+.banner i.fa:hover
+{
+  color: #fff;
+  background: #000;
+}
+/* @media (max-width: 320px) {
+  .client .carousel-item img {
+    display: none;
+  }
+  .client .carslid {
+      height: 100%;
+      overflow-y: hidden;
+  }
+  .carousel {
+      position: relative;
+      height: 50vh;
+  }
+}
+@media (max-width: 425px) And (min-width: 321px) {
+  .client .carousel-item img {
+      margin: 20px 35% 30vh 35%;
+      width: 30%;
+      border-radius: 50%;
+      height: auto;
+  }
+}
+@media (max-width: 425px) {
+
+.client .heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 1.875rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+.banner {
+  height: 30vh;
+}
+.banner i.fa {
+    height: auto;
+    line-height: 30vh;
+    font-size: 5vh;
+}
+}
+
+
+@media (max-width: 1245px) {
+  .services .container2 .servicesbx {
+  border-radius: 0.625rem;
+  position: relative;
+  cursor: pointer;
+  background: #000;
+  width: 23rem;
+  height: 27rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+@media (min-width: 1100px) And (max-width: 1425px) {
+  .about .text {
+      margin-top: 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: 1px;
+  }
+} */
+@media (max-width: 1440px) AND (min-width: 769px) {
+  .banner1 .content h2 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.banner1 .content p {
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: right;
+}
+.heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+.about .text {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.services .heading {
+    color: #000;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+.services .text {
+    color: #000;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.technology .heading {
+    color: #000;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.technology .text {
+    color: #000;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.technology .brands {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+}
+.client .heading {
+    color: #000;
+    text-align: center;
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+.client .carousel-item h2, p, h4 {
+    color: #000;
+    font-size: 1.6rem;
+}
+.h4, h4 {
+    font-size: 1.3rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+}
+@media (max-width: 426px) {
+.banner1 header .menu{
+  display: block;
+  margin: 4%;
+width: 10%;
+height: auto
+}
+#myDIV {
+  display: none;
+}
+.banner1 header .nItems {
+  flex-direction: column;
+  width: 100%;
+  margin: 2%;
+}
+.logolist {
+  width: 50%;
+  margin: 5%;
+}
+.logolist img {
+  width: 100%;
+  height: auto;
+}
+.banner1 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+}
+@media (max-width: 768px) {
+  .banner {
+    width: 100%;
+    height: 20vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width: 768px) AND (min-width: 426px) {
+
+  .technology img {
+    width: 70%;
+    margin: 40px 15%;
+    height: auto;
+    /* padding: 20px; */
+}.banner1 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+  .nItems {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 14px;
+  }
+
+  .banner i.fa{
+    height: auto;
+    line-height: 60vh;
+    font-size: 10vh;
+  }
+
+  .banner a {
+    height: auto;
+    }
+    .client .heading {
+      color: #000;
+    }
+  .client .carousel-item h2, p, h4 {
+    color: #000;
+    font-size: 1rem;
+}
+.client {
+  height: 60vh;
+}
+.rex {
+  height: 35vh;
+}
+.h4, h4 {
+    font-size: 0.8rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+.banner1 .content {
+    position: relative;
+    margin: 10%;
+    text-align: center;
+}
+.banner1 .content h2 {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.banner1 .content p {
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: right;
+}
+.banner1 .content {
+    position: relative;
+    max-width: 650px;
+    text-align: center;
+}
+.heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+.about .text {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.services {
+  height: auto;
+}
+.services .heading {
+    color: #000;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+    .about {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about .imgBx {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .about .contentBx {
+    background: #000;
+    box-sizing: border-box;
+    padding: 3.125rem;
+    width: 100%;
+    height: auto;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(deer3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contact .contentBx {
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding: 15% 3.125rem;
+    width: 100%;
+    height: auto;
+}
+.contact .imgBx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.services .servicesbx {
+  margin: 5% auto;
+}
+}
+@media (max-width: 1240px) {
+  .services .servicesbx {
+    margin: 5% auto;
+  }
+  .services {
+    height: auto;
+  }
+}
+@media (max-width: 425px) {
+  .client {
+      height: 60vh;
+      background: #fff;
+  }
+  .rex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto 15%;
+    height: 40vh;
+}
+  .services .servicesbx {
+    margin: 5% auto;
+  }
+  .technology img {
+    width: 80%;
+    margin: 40px 10%;
+    height: auto;
+    /* padding: 20px; */
+}
+  .banner i.fa{
+    height: auto;
+    line-height: 60vh;
+    font-size: 5vh;
+  }
+
+  .banner a {
+    height: auto;
+    }
+    .client .heading {
+      color: #000;
+    }
+  .client .carousel-item h2, p, h4 {
+    color: #000;
+    font-size: 1rem;
+}
+
+.h4, h4 {
+    font-size: 0.8rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+.banner1 .content {
+    position: relative;
+    margin: 10%;
+    text-align: center;
+}
+.banner1 .content h2 {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.banner1 .content p {
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: right;
+}
+.banner1 .content {
+    position: relative;
+    max-width: 650px;
+    text-align: center;
+}
+.heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+.about .text {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.services {
+  height: auto;
+}
+.services .text {
+  font-size: 0.8rem;
+}
+.services .heading {
+    color: #000;
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0.625rem;
+}
+    .about {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about .imgBx {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .about .contentBx {
+    background: #000;
+    box-sizing: border-box;
+    padding: 3.125rem;
+    width: 100%;
+    height: auto;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(deer3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contact .contentBx {
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding: 15% 3.125rem;
+    width: 100%;
+    height: auto;
+}
+.contact .imgBx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.services .servicesbx {
+  margin: 5% auto;
+}
+}
